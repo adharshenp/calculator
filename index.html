@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+</head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./calc.css">
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 mt-4 p-2"></div>
+            <div class="col-md-4 text-center mt-5 text-white">
+                <h1>calculator</h1>
+            </div>    
+
+
+               <div id="id1">
+
+            <table class="table mt-1 " style="background-color: rgb(0, 34, 65);">
+                <tr>
+                    <td colspan="3">
+                        <input id="result" type="text" class="w-100 mt-2" placeholder="0" style="background-color: white; text-align: right;" readonly>
+                    </td>
+                    <td>
+                        <input type="button" value="AC" class="w-100 mt-2" style="color: red;" onclick="fullback()">
+                    </td>
+                </tr>
+
+            <tr>
+                <td>
+                        <input type="button" value="7" class="w-100 mt-2" style="color: white;" onclick="display('7')">
+                </td>
+                <td>
+                        <input type="button" value="8" class="w-100 mt-2" style="color: white;" onclick="display('8')">
+                </td>
+                <td>
+                        <input type="button" value="9" class="w-100 mt-2" style="color: white;" onclick="display('9')">
+                </td>
+                <td>
+                        <input type="button" value="/" class="w-100 mt-2" style="color: orange" onclick="display('/')">
+                </td>
+                    
+            </tr>
+
+
+            <tr>
+                <td>
+                        <input type="button" value="4" class="w-100 mt-2" style="color: white;" onclick="display('4')">
+                </td>
+                <td>
+                        <input type="button" value="5" class="w-100 mt-2" style="color: white;" onclick="display('5')">
+                </td>
+                <td>
+                        <input type="button" value="6" class="w-100 mt-2" style="color: white;" onclick="display('6')">
+                </td>
+                <td>
+                        <input type="button" value="*" class="w-100 mt-2" style="color: orange" onclick="display('*')">
+                </td>
+                    
+            </tr>
+
+            <tr>
+                <td>
+                        <input type="button" value="1" class="w-100 mt-2" style="color: white;" onclick="display('1')">
+                </td>
+                <td>
+                        <input type="button" value="2" class="w-100 mt-2" style="color: white;" onclick="display('2')">
+                </td>
+                <td>
+                        <input type="button" value="3" class="w-100 mt-2" style="color: white;" onclick="display('3')">
+                </td>
+                <td>
+                        <input type="button" value="-" class="w-100 mt-2" style="color: orange" onclick="display('-')">
+                </td>
+                    
+            </tr>
+
+
+
+            <tr>
+                <td >
+                        <input type="button" value="0" class="w-100 mt-2" style="color: white;" onclick="display('0')">
+                </td>
+                <td>
+                        <input type="button" value="." class="w-100 mt-2" style="color: white;" onclick="display('.')">
+                </td>
+                <td>
+                        <input type="button" value="=" class="w-100 mt-2" style="color: orange;" onclick="equal()">
+                </td>
+                <td>
+                        <input type="button" value="+" class="w-100 mt-2" style="color: orange;" onclick="display('+')">
+                </td>
+                    
+            </tr>
+
+            <tr>
+                <td>
+                    <input type="button" value="X" class="w-100 mt-2" style="color: orange;" onclick="back()">
+                </td>
+            </tr>
+
+
+
+
+
+            </table>   
+            
+            <div class="col-md-4 mt-5 pr-5"></div>
+        </div>  
+        </div>
+    </div>
+</body>
+<script src="./calc.js"></script>
+</html>
